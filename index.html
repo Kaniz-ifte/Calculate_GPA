@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>GPA Calculator</title>
+
+<style>
+@media print {
+   .noprint {
+      visibility: hidden;
+   }  
+  }  
+.tablefirst, .tablesecond {
+    text-align: center;
+}
+.marksheet-box{
+    background-image: url(http://peoplehelp.in/mewaruni/images/marksheet-bg.png);
+    border: 2px solid #000;
+    padding: 15px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  background-size: contain;
+}
+.uni-logo, .uni-add, .txt-cntr{
+  text-align: center;
+}
+.uni-add p {
+    margin: 10px auto;
+}
+.Studen_Detail {
+    margin: 20px 0;
+}
+.Studen_Detail p {
+    margin-bottom: 0px;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.32);
+}
+* {
+    border-color: #00000075 !important;
+}
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: rgb(255, 255, 255);
+}
+.table-div thead th {
+    border-bottom: 0px !important;
+}
+</style>
+
+  </head>
+  <body>
+    
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="marksheet-box">
+					<div class="row">
+						<div class="col-sm-3 txt-cntr"></div>
+						<div class="col-sm-6 uni-logo">
+							<!-- <img src="http://peoplehelp.in/mewaruni/images/mewaruniversitylogo.png" alt="uni-logo"/> -->
+						  <h1>Gunner' English School</h1>
+            </div>
+						<div class="col-sm-3 txt-cntr"></div>
+						<div class="col-sm-12 uni-add">
+							<p>Address: Golondaz Rd, Chattogram <br>(www.gesctg.edu.bd )</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-sm-4 enrolmentNo txt-cntr">
+							<!-- <p><strong>Enrollment No. </strong> ABCD00012345</p> -->
+						</div>
+						<div class="col-sm-4 streamName  txt-cntr">
+							<h2>RESULT</h2>
+							<!-- <h5>Bachelor of Commerce (General)<h5>
+							<h5>Year Examination : May - 19<h5> -->
+						</div>
+						<div class="col-sm-4">
+						</div>
+					</div>
+					<div class="row Studen_Detail">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4 offset-sm-2">
+									<p><span><strong>Name of Student :</strong></span><strong><input type="text" name="Name" id="Name"/ placeholder="Type name"></strong></p>
+									<p><strong>Fathers Name :</strong><strong> <input type="text" name="FName" id="FName"/ placeholder="Type Father name"></strong></p>
+									<p><strong>Mothers Name :</strong><strong> <input type="text" name="MName" id="MName"/ placeholder="Type Mother name"></strong></p>
+								</div>
+								<div class="col-sm-4 offset-sm-2">
+                  <p><strong>Class :</strong><strong> <input type="text" name="class" id="class"/ placeholder="Type Class"></strong></p>
+									<p><strong>Roll No :</strong><strong> <input type="text" name="roll" id="roll"/ placeholder="Type Roll"></strong></p>
+									<p><strong>Year :</strong><strong> <input type="text" name="year" id="year"/ placeholder="Type year"></strong></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+				<div class="row">
+				<div class="container-fluid">
+				<div class="col-12">
+<div class="table-div">
+<table class="table table-bordered tablefirst">
+  <thead>
+    <tr>
+      <th rowspan="2" style="vertical-align: middle;">Subject Code</th>
+      <th rowspan="2" style="vertical-align: middle;">Subject Name</th>
+      <!-- <th colspan="2">Maximum Marks</th> -->
+      <th rowspan="2" style="vertical-align: middle;">Total</th>
+      <!-- <th colspan="2">Marks Obtained</th> -->
+      <th rowspan="2" style="vertical-align: middle;">Marks Obtained</th>
+      <th rowspan="2" colspan="3" style="vertical-align: middle;">Grade</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+    <tr>
+      <th style="text-align:center;"><input type="text" name="code1" id="code1"/ placeholder="Type subject code"><br></th>
+      <td style="text-align:center;"><input type="text" name="subject1" id="subject1"/ placeholder="Type subject name"><br></td>
+      <td style="text-align:center;"><input type="text" name="total1" id="total1"/ placeholder="Type total marks"><br></td>
+      <td style="text-align:center;"><input type="text" name="textForm1" id="textForm1"/ placeholder="Type obtained marks"><br></td>
+      <td style="text-align:center;"><output type="text" name="grade1" id="grade1"/ ></output><br></td>
+      
+    </tr>
+    <tr>
+      <th style="text-align:center;"><input type="text" name="code2" id="code2"/ placeholder="Type subject code"><br></th>
+      <td style="text-align:center;"><input type="text" name="subject2" id="subject2"/ placeholder="Type subject name"><br></td>
+      <td style="text-align:center;"><input type="text" name="total2" id="total2"/ placeholder="Type total marks"><br></td>
+      <td style="text-align:center;"><input type="text" name="textForm2" id="textForm2"/ placeholder="Type obtained marks"><br></td>
+      <td style="text-align:center;"><output type="text" name="grade2" id="grade2"/ ></output><br></td>
+      
+    </tr>
+    <tr>
+      <th style="text-align:center;"><input type="text" name="code3" id="code3"/ placeholder="Type subject code"><br></th>
+      <td style="text-align:center;"><input type="text" name="subject3" id="subject3"/ placeholder="Type subject name"><br></td>
+      <td style="text-align:center;"><input type="text" name="total3" id="total3"/ placeholder="Type total marks"><br></td>
+      <td style="text-align:center;"><input type="text" name="textForm3" id="textForm3"/ placeholder="Type obtained marks"><br></td>
+      <td style="text-align:center;"><output type="text" name="grade3" id="grade3"/ ></output><br></td>
+      
+    </tr>
+    <tr>
+      <th style="text-align:center;"><input type="text" name="code4" id="code4"/ placeholder="Type subject code"><br></th>
+      <td style="text-align:center;"><input type="text" name="subject4" id="subject4"/ placeholder="Type subject name"><br></td>
+      <td style="text-align:center;"><input type="text" name="total4" id="total4"/ placeholder="Type total marks"><br></td>
+      <td style="text-align:center;"><input type="text" name="textForm4" id="textForm4"/ placeholder="Type obtained marks"><br></td>
+      <td style="text-align:center;"><output type="text" name="grade4" id="grade4"/ ></output><br></td>
+      <!-- <td>20</td>
+      <td>30</td>
+      <td>50</td>
+      <td colspan="2">Pass</td> -->
+    </tr>
+    <tr>
+      <th style="text-align:center;"><input type="text" name="code5" id="code5"/ placeholder="Type subject code"><br></th>
+      <td style="text-align:center;"><input type="text" name="subject5" id="subject5"/ placeholder="Type subject name"><br></td>
+      <td style="text-align:center;"><input type="text" name="total5" id="total5"/ placeholder="Type total marks"><br></td>
+      <td style="text-align:center;"><input type="text" name="textForm5" id="textForm5"/ placeholder="Type obtained marks"><br></td>
+      <td style="text-align:center;"><output type="text" name="grade5" id="grade5"/ ></output><br></td>
+      <!-- <td>20</td>
+      <td>30</td>
+      <td>50</td>
+      <td colspan="2">Pass</td> -->
+    </tr>
+    <tr>
+      <th colspan="2" style="text-align: right;">Total</th>
+      <th id="total0"></th>
+      <th id="total"></th>
+      <th id="grade"><button type="button" onClick="getGrade(calculateGPA)" value="Submit">=</button></th>
+      <!-- <th>100</th>
+      <th>150</th>
+      <th>250</th>
+      <th>Remarks</th>
+      <th>50%</th> -->
+    </tr>
+  </tbody>
+  
+  
+<table class="table table-bordered tablesecond">
+  
+</table>
+  
+            </div>
+				</div>
+				</div>
+				
+				
+				
+				</div>
+				<br><br><br><br>
+<div class="row">
+	<div class="col-sm-4 txt-cntr"><p style="height:40px;"></p>
+    <p><strong>Date of Issue :</strong><strong> 11 June 2019</strong></p></div>
+	<div class="col-sm-4 txt-cntr"><p style="height:40px;"></p>
+    <p><strong>University Stamp </strong></p></div>
+	<div class="col-sm-4 txt-cntr"><p style="height:40px;"></p>
+    <!-- <p><img src="http://peoplehelp.in/mewaruni/images/signature.png" alt="student-signarute" width="100px; height="40px;"/></p> -->
+    <p><strong>Signature of Controller</strong></p></div>
+</div>
+<div class="row">
+  <div class="col-sm-6 txt-cntr"></div>  
+<div class="noprint" class="col-sm-4 txt-cntr" style="text-align: center;">
+  <!-- <button type="button" onClick="getGrade(calculateGPA)" value="Submit">Submit</button> -->
+  <button onclick="display()">Click to Print</button>
+</div>
+</div>
+
+<script>
+  var calculateGPA = (marks) => {
+        if(marks < 33 ) return 'F: 0';
+        if(marks >= 33 && marks < 40 ) return 'D: 1.00';
+        if(marks >= 40 && marks < 50 ) return 'C: 2.00';
+        if(marks >= 50 && marks < 60 ) return 'B: 3.00';
+        if(marks >= 60 && marks < 70 ) return 'A-: 3.50';
+        if(marks >= 70 && marks < 80 ) return 'A: 4.00';
+        if(marks >= 80 ) return 'A+: 5.00';
+        }
+  
+        var getGrade = function (GPA) {
+            
+            var totalOne = parseFloat(document.getElementById("total1").value);
+            var totalTwo = parseFloat(document.getElementById("total2").value);
+            var totalThree = parseFloat(document.getElementById("total3").value);
+            var totalFour = parseFloat(document.getElementById("total4").value);
+            var totalFive = parseFloat(document.getElementById("total5").value);
+
+            var inputOne = parseFloat(document.getElementById("textForm1").value);
+            var inputTwo = parseFloat(document.getElementById("textForm2").value);
+            var inputThree = parseFloat(document.getElementById("textForm3").value);
+            var inputFour = parseFloat(document.getElementById("textForm4").value);
+            var inputFive = parseFloat(document.getElementById("textForm5").value);
+
+            document.getElementById("grade1").innerHTML = calculateGPA(inputOne) ;
+            document.getElementById("grade2").innerHTML = calculateGPA(inputTwo) ;
+            document.getElementById("grade3").innerHTML = calculateGPA(inputThree) ;
+            document.getElementById("grade4").innerHTML = calculateGPA(inputFour) ;
+            document.getElementById("grade5").innerHTML = calculateGPA(inputFive) ;
+            
+            var total0 = (totalOne + totalTwo + totalThree + totalFour + totalFive);
+            var total = (inputOne + inputTwo + inputThree + inputFour + inputFive);
+            document.getElementById("total0").innerHTML =  total0.toFixed(2) ;
+            document.getElementById("total").innerHTML =  total.toFixed(2) + '<br>' + ' ( ' + ((total/total0) * 100).toFixed(2) + '%)';
+            
+            var averageTotal = (inputOne + inputTwo + inputThree + inputFour) / 5;
+            document.getElementById("grade").innerHTML = 'Grade: <b>' + GPA(averageTotal) + '</b>';
+
+        }
+  function display() {
+                window.print(); 
+            }
+</script>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
